@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasha Games</title>
+    <link rel="stylesheet" href="./style.css">
+    <script  defer src="./main.js"></script>
+</head>
+<body>
+    <img id="bg" src="./images/Untitled design.jpg" alt="games">
+    <div id="main-content">
+    <header>
+        <h1>Trivia Games</h1>
+    </header>
+    <form action="">
+        <h3>How Much Do You Love Games?</h3>
+        <h4>Below Choose A Catorgary</h4>
+        <input type="radio" value="video" id="video" checked>Video Games 
+        <input type="radio" name="board" id="board">Board Games
+        <h4>Below Choose A Difficulty</h4>
+        <select name="difficulty" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button type="submit">Let's Play</button>
+
+    </form>
+    <main>
+        <div class="scoreboard">
+            <p>Score: <span class="score">0</span></p>
+        </div>
+        <div class="questions">
+            <h2 id="question"></h2>
+            <div id="answers"></div>
+            <button id="next">Next</button>
+        </div>
+    </main>
+</div>
+</body>
+</html>
