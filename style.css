@@ -1,33 +1,30 @@
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-/* body{
-    background: url(./images/Untitled\ design.jpg) no-repeat; 
-    height: 10px;
-} */
-img.bg{
+body{
+    margin: 0;
+}
+div img{
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
     min-height: 100%;
-    z-index: 1;
-    position: absolute;
-}
-div.main-content{
-    position: absolute;
-    z-index: 2;
-
-
-}
-
-header{
-    height: 15vh;
-    border: 2px solid red;
+    height: 100vh;
+   
 }
 main{
     display: grid;
     grid-template-rows: 1fr 6fr ;
     height: 85vh;
     border: 2px solid purple;
-    /* display: none; */
-    
+}
+#score{
+
+    display: none;
+}
+header{
+    height: 15vh;
+    border: 2px solid red;
 }
 h1, p{
     text-align: center;
@@ -36,6 +33,7 @@ h1, p{
     border:  2px solid green;
     display: grid;
     align-items: center;
+
 }
 .questions{
     border:  2px solid orange;
